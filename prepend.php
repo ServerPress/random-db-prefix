@@ -18,11 +18,6 @@ if ( ! class_exists( 'DS_Random_DB_Prefix' ) ) {
             $siteName = $ds_runtime->last_ui_event->info[0];
             $wpconfig = $ds_runtime->preferences->sites->{$siteName}->sitePath . '/wp-config.php';
 
-            // Backup the config file
-            if ( file_exists( $wpconfig ) ) {
-                copy( $wpconfig, $wpconfig . '-sav' );
-            }
-
             // Collect needed configuration info
             $config_file = new DS_ConfigFile( $wpconfig );
             $db_user = $config_file->get_key( 'DB_USER' );
