@@ -1,0 +1,16 @@
+{
+    "name": "serverpress/random-db-prefix",
+    "description": "Provides a random database prefix for new sites.",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors":[
+        {
+            "name": "Gregg Franklin & Nathan Tyler",
+            "email": "gfranklin@serverpress.com",
+            "homepage": "https://github.com/serverpress"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
